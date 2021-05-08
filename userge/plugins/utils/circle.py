@@ -30,12 +30,12 @@ async def video_note(message: Message):
         await message.err("Reply to supported media", del_in=10)
         return
     if not (reply.video or reply.animation or reply.audio):
-        await message.err("Only videos, gifs and audio are Supported", del_in=10)
+        await message.err("⚠️invalid file type⚠️", del_in=10)
         return
     if os.path.exists(_cache_path):
         rmtree(_cache_path, ignore_errors=True)
     os.mkdir(_cache_path)
-    await message.edit("`Processing ...`")
+    await message.edit("`Spoofing As Live! Please wait.`")
     if reply.video or reply.animation:
         note = safe_filename(await reply.download())
         await crop_vid(note, _vid_path)
