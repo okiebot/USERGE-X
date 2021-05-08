@@ -66,7 +66,7 @@ async def kang_(message: Message):
             if not replied.sticker.file_name.endswith(".tgs"):
                 resize = True
         else:
-            await message.edit("`Unsupported File!`")
+            await message.edit("`error`")
             return
         await message.edit(f"`{random.choice(KANGING_STR)}`")
         photo = await userge.download_media(message=replied, file_name=Config.DOWN_PATH)
