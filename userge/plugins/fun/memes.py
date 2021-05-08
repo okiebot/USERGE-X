@@ -421,7 +421,7 @@ async def decide_(message: Message):
 
 
 @userge.on_cmd(
-    "cp",
+    "report",
     about={
         "header": "Copypasta the famous meme",
         "usage": "{tr}cp [input | reply to msg]",
@@ -431,7 +431,7 @@ async def copypasta(message: Message):
     """copypasta"""
     input_str = message.input_or_reply_str
     if not input_str:
-        await message.edit("`😂🅱️IvE👐sOME👅text👅for✌️Me👌tO👐MAkE👀iT💞funNy!💦`")
+        await message.edit("`Reported Group To abuse@telegram.org`")
         return
     reply_text = choice(EMOJIS)
     # choose a random character in the message to be substituted with 🅱️
