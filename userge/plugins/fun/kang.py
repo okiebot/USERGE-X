@@ -71,7 +71,7 @@ async def kang_(message: Message):
         await message.edit(f"`{random.choice(KANGING_STR)}`")
         photo = await userge.download_media(message=replied, file_name=Config.DOWN_PATH)
     else:
-        await message.edit("`I can't kang that...`")
+        await message.edit("`error`")
         return
     if photo:
         args = message.filtered_input_str.split()
@@ -94,7 +94,7 @@ async def kang_(message: Message):
         u_name = user.username
         u_name = "@" + u_name if u_name else user.first_name or user.id
         packname = f"a{user.id}_by_x_{pack}"
-        custom_packnick = Config.CUSTOM_PACK_NAME or f"{u_name}'s kang pack"
+        custom_packnick = Config.CUSTOM_PACK_NAME or f"{u_name} PACK"
         packnick = f"{custom_packnick} Vol.{pack}"
         cmd = "/newpack"
         if resize:
@@ -178,7 +178,7 @@ async def kang_(message: Message):
                 await conv.send_message("/done")
                 await conv.get_response(mark_read=True)
         else:
-            await message.edit("`Brewing a new Pack...`")
+            await message.edit("`SAVING`")
             async with userge.conversation("Stickers") as conv:
                 try:
                     await conv.send_message(cmd)
@@ -231,12 +231,12 @@ async def sticker_pack_info_(message: Message):
     """get sticker pack info"""
     replied = message.reply_to_message
     if not replied:
-        await message.edit("`I can't fetch info from nothing, can I ?!`")
+        await message.edit("`error`")
         return
     if not replied.sticker:
-        await message.edit("`Reply to a sticker to get the pack details`")
+        await message.edit("`error`")
         return
-    await message.edit("`Fetching details of the sticker pack, please wait..`")
+    await message.edit("`searching`")
     get_stickerset = await message.client.send(
         GetStickerSet(
             stickerset=InputStickerSetShortName(short_name=replied.sticker.set_name)
@@ -274,16 +274,16 @@ def resize_photo(photo: str) -> io.BytesIO:
 
 
 KANGING_STR = (
-    "Using Witchery to kang this sticker...",
-    "Plagiarising hehe...",
-    "Inviting this sticker over to my pack...",
-    "Kanging this sticker...",
-    "Hey that's a nice sticker!\nMind if I kang?!..",
-    "hehe me stel ur stikér\nhehe.",
-    "Ay look over there (☉｡☉)!→\nWhile I kang this...",
-    "Roses are red violets are blue, kanging this sticker so my pacc looks cool",
-    "Imprisoning this sticker...",
-    "Mr.Steal Your Sticker is stealing this sticker... ",
+    "SAVING",
+    "SAVING",
+    "SAVING",
+    "SAVING",
+    "SAVING",
+    "SAVING",
+    "SAVING",
+    "SAVING",
+    "SAVING",
+    "SAVING",
 )
 
 
