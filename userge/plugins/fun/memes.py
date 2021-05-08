@@ -813,7 +813,7 @@ async def hack_func(message):
     await message.edit(hecked)
 
 
-@userge.on_cmd("kill$", about={"header": "Kill anybody With Full Power ;-)"})
+@userge.on_cmd("pedo$", about={"header": "Kill anybody With Full Power ;-)"})
 async def kill_func(message):
     animation_chars = [
         "LoLLLLL your a fucking pedo!!",
