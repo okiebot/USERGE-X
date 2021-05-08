@@ -816,16 +816,16 @@ async def hack_func(message):
 @userge.on_cmd("kill$", about={"header": "Kill anybody With Full Power ;-)"})
 async def kill_func(message):
     animation_chars = [
-        "killing...",
-        "Ｆｉｉｉｉｉｒｅ",
-        "(　･ิω･ิ)︻デ═一-->",
-        "------>_____________",
-        "--------->___⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠_______",
-        "-------------->_____",
-        "------------------->",
-        "------>;(^。^)ノ",
-        "(￣ー￣) DED",
-        "<b>Target killed successfully (´°̥̥̥̥̥̥̥̥ω°̥̥̥̥̥̥̥̥｀)</b>",
+        "LoLLLLL your a fucking pedo!!",
+        "But it's also okay to be a pedo...",
+        "Maggsy is a pedo",
+        "157 is a pedo",
+        "Lalo is a pedo",
+        "Balk is a pedo",
+        "Everyone is a pedo...",
+        "So don't be silly and don't touch your willy",
+        "😩🚫🍆",
+        "<b>But tbh idk what the fuck I wrote this for I'm bored asf｀)</b>",
     ]
     for i in range(10):
         await asyncio.sleep(0.6)
