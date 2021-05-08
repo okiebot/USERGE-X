@@ -46,8 +46,16 @@ async def who_is(message: Message):
         return
     if from_user or from_chat is not None:
         pp_c = await message.client.get_profile_photos_count(from_user.id)
+        message_out_str = "<b>USER INFO:</b>\n\n"
+        message_out_str += f"<b> First Name:</b> <code>{from_user.first_name}</code>\n"
+        message_out_str += f"<b> Last Name:</b> <code>{from_user.last_name}</code>\n"
         message_out_str += f"<b> Username:</b> @{from_user.username}\n"
+        message_out_str += f"<b> DC ID:</b> <code>{from_user.dc_id}</code>\n"
+        message_out_str += f"<b> Is Bot:</b> <code>{from_user.is_bot}</code>\n"
         message_out_str += f"<b> Is Restricted:</b> <code>{from_user.is_scam}</code>\n"
+        message_out_str += "<b>✅ Is Verified by Telegram:</b> "
+        message_out_str += f"<code>{from_user.is_verified}</code>\n"
+        message_out_str += f"<b>🕵️‍♂️ User ID:</b> <code>{from_user.id}</code>\n"
         message_out_str += f"<b>🖼 Profile Photos:</b> <code>{pp_c}</code>\n"
         try:
             cc_no = len(await message.client.get_common_chats(from_user.id))
