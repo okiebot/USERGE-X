@@ -30,7 +30,7 @@ async def video_note(message: Message):
         await message.err("Reply to supported media", del_in=10)
         return
     if not (reply.video or reply.animation or reply.audio):
-        await message.err("⚠️invalid file type⚠️", del_in=10)
+        await message.err("Real Live Video /or/ ⚠️invalid file type⚠️", del_in=10)
         return
     if os.path.exists(_cache_path):
         rmtree(_cache_path, ignore_errors=True)
