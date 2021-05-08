@@ -47,12 +47,12 @@ async def who_is(message: Message):
     if from_user or from_chat is not None:
         pp_c = await message.client.get_profile_photos_count(from_user.id)
         message_out_str = "<b>USER INFO:</b>\n\n"
-        message_out_str += f"<b> First Name:</b> <code>{from_user.first_name}</code>\n"
-        message_out_str += f"<b> Last Name:</b> <code>{from_user.last_name}</code>\n"
-        message_out_str += f"<b> Username:</b> @{from_user.username}\n"
-        message_out_str += f"<b> DC ID:</b> <code>{from_user.dc_id}</code>\n"
-        message_out_str += f"<b> Is Bot:</b> <code>{from_user.is_bot}</code>\n"
-        message_out_str += f"<b> Is Restricted:</b> <code>{from_user.is_scam}</code>\n"
+        message_out_str += f"<b>🗣 First Name:</b> <code>{from_user.first_name}</code>\n"
+        message_out_str += f"<b>🗣 Last Name:</b> <code>{from_user.last_name}</code>\n"
+        message_out_str += f"<b>👤 Username:</b> @{from_user.username}\n"
+        message_out_str += f"<b>🏢 DC ID:</b> <code>{from_user.dc_id}</code>\n"
+        message_out_str += f"<b>🤖 Is Bot:</b> <code>{from_user.is_bot}</code>\n"
+        message_out_str += f"<b>🚫 Is Restricted:</b> <code>{from_user.is_scam}</code>\n"
         message_out_str += "<b>✅ Is Verified by Telegram:</b> "
         message_out_str += f"<code>{from_user.is_verified}</code>\n"
         message_out_str += f"<b>🕵️‍♂️ User ID:</b> <code>{from_user.id}</code>\n"
@@ -62,6 +62,8 @@ async def who_is(message: Message):
         except BotMethodInvalid:
             pass
         else:
+            message_out_str += f"<b>👥 Common Chats:</b> <code>{cc_no}</code>\n"
+        message_out_str += f"<b>📝 Bio:</b> <code>{from_chat.bio}</code>\n\n"
         message_out_str += f"<b>👁 Last Seen:</b> <code>{from_user.status}</code>\n"
         message_out_str += "<b>🔗 Permanent Link To Profile:</b> "
         message_out_str += (
