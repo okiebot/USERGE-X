@@ -500,7 +500,7 @@ async def zal_(message: Message):
     input_str = message.input_or_reply_str
     if not input_str:
         await message.edit(
-            "`gͫ ̆ i̛ ̺ v͇̆ ȅͅ   a̢ͦ   s̴̪ c̸̢ ä̸ rͩͣ y͖͞   t̨͚ é̠ x̢͖  t͔͛`"
+            "`gͫ ̆ i̛ ̺ v͇̆ ȅͅ   a̢ͦ   s̴̪ c̸̢ ä̸ rͩͣ y͖͞   t̨͚ é̠ x̢͖  t͔͛`"
         )
         return
     reply_text = []
@@ -770,23 +770,23 @@ async def hack_func(message):
     user = await message.client.get_user_dict(message.from_user.id)
     heckerman = user["mention"]
     animation_chars = [
-        "```Connecting To Private Server \\```",
-        "```Connecting To Private Server |```",
-        "```Connecting To Private Server /```",
-        "```Connecting To Private Server \\```",
-        "```Connection Established ```",
-        "```Target Selected```",
-        "```Backdoor Found In Target```",
-        "```Trying To Hack```",
-        "```Hacking... 0%\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒```",
-        "```Hacking... 4%\n█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒```",
-        "```Hacking... 8%\n██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒```",
-        "```Hacking... 20%\n█████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒```",
-        "```Hacking... 36%\n█████████▒▒▒▒▒▒▒▒▒▒▒▒▒```",
-        "```Hacking... 52%\n█████████████▒▒▒▒▒▒▒▒▒```",
-        "```Hacking... 70%\n█████████████████▒▒▒▒▒```",
-        "```Hacking... 88%\n█████████████████████▒```",
-        "```Hacking... 100%\n███████████████████████```",
+        "```Saving Users info to extort.py```",
+        "```Connecting To extort.py```",
+        "```⚠️Connecting To extort.py⚠️```",
+        "```Connecting To extort.py```",
+        "```⚠️Connecting To extort.py⚠️```",
+        "```CONNECTED! Loading_Script..```",
+        "```♦️NOW STARTING♦️```",
+        "```Reported to abuse@telegram.org```",
+        "```Logging IP⚠️ 0%\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒```",
+        "```Logging IP⚠️ 4%\n█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒```",
+        "```Logging IP⚠️ 8%\n██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒```",
+        "```Logging IP⚠️ 20%\n█████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒```",
+        "```Logging IP⚠️ 36%\n█████████▒▒▒▒▒▒▒▒▒▒▒▒▒```",
+        "```Logging IP⚠️ 52%\n█████████████▒▒▒▒▒▒▒▒▒```",
+        "```Logging IP⚠️ 70%\n█████████████████▒▒▒▒▒```",
+        "```Logging IP⚠️ 88%\n█████████████████████▒```",
+        "```IP LOGGED!!... 100%\n███████████████████████```",
         "```Preparing Data... 1%\n▒██████████████████████```",
         "```Preparing Data... 14%\n████▒██████████████████```",
         "```Preparing Data... 30%\n████████▒██████████████```",
@@ -794,17 +794,17 @@ async def hack_func(message):
         "```Preparing Data... 72%\n████████████████▒██████```",
         "```Preparing Data... 88%\n████████████████████▒██```",
         "```Prepared Data... 100%\n███████████████████████```",
-        "```Uploading Data to Server... 12%\n███▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒```",
-        "```Uploading Data to Server... 44%\n█████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒```",
-        "```Uploading Data to Server... 68%\n███████████████▒▒▒▒▒▒▒▒```",
-        "```Uploading Data to Server... 89%\n████████████████████▒▒▒```",
-        "```Uploaded Data to Server... 100%\n███████████████████████```",
-        "**User Data Upload Completed:** Target's User Data Stored "
-        "at `downloads/victim/telegram-authuser.data.sql`",
+        "```Uploading Data to Doxbin.org  12%\n███▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒```",
+        "```Uploading Data to Doxbin.org   44%\n█████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒```",
+        "```Uploading Data to Doxbin.org   68%\n███████████████▒▒▒▒▒▒▒▒```",
+        "```Uploading Data to Doxbin.org   89%\n████████████████████▒▒▒```",
+        "```Uploading Data to Doxbin.org   100%\n███████████████████████```",
+        "**User Data Upload Completed:** Target's User Data Uploaded to doxbin "
+        "at `doxbin.org/victim/telegram-authuser.data.sql`",
     ]
     hecked = (
-        f"**Targeted Account Hacked**\n\n```Pay 69$ To``` {heckerman}``` "
-        "To Remove This Hack```"
+        f"**Targeted Account Hacked saved to doxbin.org, IP & info saved in logger**\n\n```Pay 0.00102546 btc To``` BTC: 1BFuH3Kwa2kTwsg6jr2phGhZrWaggQTVTm``` "
+        "Or get ur shit rekt nd be extorted"
     )
     max_ani = len(animation_chars)
     for i in range(max_ani):
@@ -1181,8 +1181,8 @@ ZALG_LIST = (
         " ̈",
         " ̊",
         " ͂",
-        " ̓",
-        " ̈́",
+        " ̓",
+        " ̈́",
         " ͊",
         " ͋",
         " ͌",
@@ -1216,8 +1216,8 @@ ZALG_LIST = (
     (
         " ̕",
         " ̛",
-        " ̀",
-        " ́",
+        " ̀",
+        " ́",
         " ͘",
         " ̡",
         " ̢",
