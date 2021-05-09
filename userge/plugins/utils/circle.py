@@ -15,7 +15,7 @@ LOG = userge.getLogger(__name__)
 
 
 @userge.on_cmd(
-    "circle",
+    "spoof",
     about={
         "header": "Convert video / gif / audio to video note",
         "usage": "{tr}circle [reply to media]",
