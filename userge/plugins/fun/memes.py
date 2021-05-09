@@ -742,23 +742,23 @@ async def sun_(message: Message):
         await message.delete()
 
 
-@userge.on_cmd("brain$", about={"header": "Dump your Brain into Trash"})
+@userge.on_cmd("scumz$", about={"header": "Dump your Brain into Trash"})
 async def brain_func(message):
     animation_chars = [
-        "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n🧠         <(^_^ <)🗑",
-        "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n🧠       <(^_^ <)  🗑",
-        "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n🧠     <(^_^ <)    🗑",
-        "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n🧠   <(^_^ <)      🗑",
-        "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n🧠 <(^_^ <)        🗑",
-        "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n🧠<(^_^ <)         🗑",
-        "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n(> ^_^)>🧠         🗑",
-        "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n  (> ^_^)>🧠       🗑",
-        "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n    (> ^_^)>🧠     🗑",
-        "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n      (> ^_^)>🧠   🗑",
-        "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n        (> ^_^)>🧠 🗑",
-        "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n          (> ^_^)>🧠🗑",
-        "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n           (> ^_^)>🗑",
-        "YOᑌᖇ ᗷᖇᗩIᑎ ➡️ 🧠\n\n           <(^_^ <)🗑",
+        "♦️SCUMZ IS BASED ASF♦️",
+        "https://t.me/joinchat/Zn3-opF0DuY1OGRh",
+        "♦️SCUMZ IS BASED ASF♦️",
+        "https://t.me/joinchat/Zn3-opF0DuY1OGRh",
+        "♦️SCUMZ IS BASED ASF♦️",
+        "https://t.me/joinchat/Zn3-opF0DuY1OGRh",
+        "♦️SCUMZ IS BASED ASF♦️",
+        "https://t.me/joinchat/Zn3-opF0DuY1OGRh",
+        "♦️SCUMZ IS BASED ASF♦️",
+        "https://t.me/joinchat/Zn3-opF0DuY1OGRh",
+        "♦️SCUMZ IS BASED ASF♦️",
+        "https://t.me/joinchat/Zn3-opF0DuY1OGRh",
+        "♦️SCUMZ IS BASED ASF♦️",
+        "♦️https://t.me/joinchat/Zn3-opF0DuY1OGRh♦️",
     ]
     for i in range(14):
         await asyncio.sleep(0.3)
