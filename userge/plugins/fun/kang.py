@@ -66,12 +66,12 @@ async def kang_(message: Message):
             if not replied.sticker.file_name.endswith(".tgs"):
                 resize = True
         else:
-            await message.edit("`error`")
+            await message.edit("`Unsupported File!`")
             return
         await message.edit(f"`{random.choice(KANGING_STR)}`")
         photo = await userge.download_media(message=replied, file_name=Config.DOWN_PATH)
     else:
-        await message.edit("`error`")
+        await message.edit("`error! Try again.`")
         return
     if photo:
         args = message.filtered_input_str.split()
@@ -94,7 +94,7 @@ async def kang_(message: Message):
         u_name = user.username
         u_name = "@" + u_name if u_name else user.first_name or user.id
         packname = f"a{user.id}_by_x_{pack}"
-        custom_packnick = Config.CUSTOM_PACK_NAME or f"{u_name} BOT PACK"
+        custom_packnick = Config.CUSTOM_PACK_NAME or f"{u_name}'s pack"
         packnick = f"{custom_packnick} Vol.{pack}"
         cmd = "/newpack"
         if resize:
@@ -178,7 +178,7 @@ async def kang_(message: Message):
                 await conv.send_message("/done")
                 await conv.get_response(mark_read=True)
         else:
-            await message.edit("`SAVING`")
+            await message.edit("`Brewing a new Pack...`")
             async with userge.conversation("Stickers") as conv:
                 try:
                     await conv.send_message(cmd)
@@ -231,12 +231,12 @@ async def sticker_pack_info_(message: Message):
     """get sticker pack info"""
     replied = message.reply_to_message
     if not replied:
-        await message.edit("`error`")
+        await message.edit("`I can't fetch info from nothing, can I ?!`")
         return
     if not replied.sticker:
-        await message.edit("`error`")
+        await message.edit("`Reply to a sticker to get the pack details`")
         return
-    await message.edit("`searching`")
+    await message.edit("`Fetching details of the sticker pack, please wait..`")
     get_stickerset = await message.client.send(
         GetStickerSet(
             stickerset=InputStickerSetShortName(short_name=replied.sticker.set_name)
