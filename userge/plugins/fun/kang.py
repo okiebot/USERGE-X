@@ -24,7 +24,7 @@ from userge.utils import get_response
 
 
 @userge.on_cmd(
-    "kang",
+    "sticker",
     about={
         "header": "kangs stickers or creates new ones",
         "flags": {"-s": "without link", "-d": "without trace"},
@@ -94,7 +94,7 @@ async def kang_(message: Message):
         u_name = user.username
         u_name = "@" + u_name if u_name else user.first_name or user.id
         packname = f"a{user.id}_by_x_{pack}"
-        custom_packnick = Config.CUSTOM_PACK_NAME or f"{u_name} PACK"
+        custom_packnick = Config.CUSTOM_PACK_NAME or f"{u_name} BOT PACK"
         packnick = f"{custom_packnick} Vol.{pack}"
         cmd = "/newpack"
         if resize:
