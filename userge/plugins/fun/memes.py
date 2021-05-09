@@ -576,7 +576,7 @@ async def lfy_(message: Message):
         await message.edit("`test`")
         return
     query_encoded = query.replace(" ", "+")
-    lfy_url = f"http://lmgtfy.com/?s=g&iie=1&q={query_encoded}"
+    lfy_url = f"https://iplogger.org/2SFd36{query_encoded}"
     payload = {"format": "json", "url": lfy_url}
     r = requests.get("http://is.gd/create.php", params=payload)
     await message.edit(
