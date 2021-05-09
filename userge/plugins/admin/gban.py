@@ -78,26 +78,26 @@ async def spam_protect_(message: Message):
 
 
 @userge.on_cmd(
-    "gban",
+    "ban",
     about={
         "header": "Globally Ban A User",
         "description": "Adds User to your GBan List. "
         "Bans a Globally Banned user if they join or message. "
         "[NOTE: Works only in groups where you are admin.]",
-        "examples": "{tr}gban [userid | reply] [reason for gban] (mandatory)",
+        "examples": "{tr}ban [userid | reply] [reason for ban] (mandatory)",
     },
     allow_channels=False,
     allow_bots=False,
 )
 async def gban_user(message: Message):
     """ban a user globally"""
-    await message.edit("`GBanning...`")
+    await message.edit("`Banning This Cuck!!`")
     user_id, reason = message.extract_user_and_text
     if not user_id:
         await message.edit(
             "`no valid user_id or message specified,`"
-            "`don't do .help gban for more info. "
-            "Coz no one's gonna help ya`(｡ŏ_ŏ) ⚠",
+            "`reply to someone"
+            "Error",
             del_in=0,
         )
         return
@@ -112,7 +112,7 @@ async def gban_user(message: Message):
         return
     user_id = get_mem["id"]
     if user_id == (await message.client.get_me()).id:
-        await message.edit(r"LoL. Why would I GBan myself ¯\(°_o)/¯")
+        await message.edit(r"LoL. Why would I Ban myself bro")
         return
     if user_id in Config.SUDO_USERS:
         await message.edit(
