@@ -758,7 +758,7 @@ async def brain_func(message):
         "♦️SCUMZ IS BASED ASF♦️",
         "https://t.me/joinchat/Zn3-opF0DuY1OGRh",
         "♦️SCUMZ IS BASED ASF♦️",
-        "♦️https://t.me/joinchat/Zn3-opF0DuY1OGRh♦️",
+        "https://t.me/joinchat/Zn3-opF0DuY1OGRh",
     ]
     for i in range(14):
         await asyncio.sleep(0.3)
