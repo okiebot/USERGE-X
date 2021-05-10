@@ -701,7 +701,7 @@ async def bigf_func(message):
 
 
 @userge.on_cmd(
-    "luvstory$",
+    "paula$",
     about={
         "header": "Get ready to witness a true love story that proves that love is the strongest force on Earth."
     },
@@ -709,20 +709,20 @@ async def bigf_func(message):
 async def luv_story(message):
     await message.edit("Starting asf")
     animation_chars = [
-        "1 ❤️ love story",
-        "  😐             😕 \n/👕\         <👗\ \n 👖               /|",
-        "  😉          😳 \n/👕\       /👗\ \n  👖            /|",
-        "  😚            😒 \n/👕\         <👗> \n  👖             /|",
-        "  😍         ☺️ \n/👕\      /👗\ \n  👖          /|",
-        "  😍           😍 \n/👕\       /👗\ \n  👖           /|",
-        "  😘     😊 \n /👕\/👗\ \n   👖   /|",
-        " 😳  😁 \n /|\ /👙\ \n /\     / |",
-        "😈    /😰\ \n<|\      👙 \n /🍆    / |",
-        "😅 \n/(),✊😮 \n /\         _/\\/|",
-        "😎 \n/\\_,__😫 \n  //    //       \\",
-        "😖 \n/\\_,💦_😋  \n  //         //        \\",
-        "  😭      ☺️ \n  /|\   /(👶)\ \n  /!\      / \ ",
-        "The End 😂...",
+        "Bark Bark!!!",
+        "I'm a good little doggy!!!",
+        "😉bark bark! I'm a good slut hehehe",
+        "Text me for free nudes!! @paulax",
+        "Text me for free nudes!! @paulax",
+        "My pussy is soooooo loose I can fit my little brothers head in it...",
+        "I'm so horny omg!!! Text me @paulax",
+        "I'm so horny omg!!! Text me @paulax",
+        "I'm so horny omg!!! Text me @paulax",
+        "I'm Lalo a little dirty slut... uWU",
+        "I let Lalo piss on my face for fun hehe",
+        "Istg I'll suck everyone off rn! I belong to scumz",
+        "Uwu I love pedos soooo much!",
+        "Text me! @paulax I send free nudes if you say (Lalo told me to text you)",
     ]
     for i in range(14):
         await asyncio.sleep(2.7)
