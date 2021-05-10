@@ -707,7 +707,7 @@ async def bigf_func(message):
     },
 )
 async def luv_story(message):
-    await message.edit("Starting asf")
+    await message.edit("😳HEHE HI!!")
     animation_chars = [
         "Bark Bark!!!",
         "I'm a good little doggy!!!",
@@ -718,7 +718,7 @@ async def luv_story(message):
         "I'm so horny omg!!! Text me @paulax",
         "I'm so horny omg!!! Text me @paulax",
         "I'm so horny omg!!! Text me @paulax",
-        "I'm Lalo a little dirty slut... uWU",
+        "I'm Lalo's little dirty slut... uWU",
         "I let Lalo piss on my face for fun hehe",
         "Istg I'll suck everyone off rn! I belong to scumz",
         "Uwu I love pedos soooo much!",
