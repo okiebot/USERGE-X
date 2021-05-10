@@ -33,7 +33,7 @@ async def pingme(message: Message):
         m_s = round((t_m_s - 0.6) / 3, 3)
         await message.edit(f"**SCUMZ♦️[𝙊𝙉𝙇𝙄𝙉𝙀]♦️SCUMZ**\n`{m_s} ms`")
     else:
-        await message.edit("`Pong!`")
+        await message.edit("`STATUS:`")
         end = datetime.now()
         m_s = (end - start).microseconds / 1000
         await message.edit(f"**SCUMZ♦️[𝙊𝙉𝙇𝙄𝙉𝙀]♦️SCUMZ**\n`{m_s} ms`")
