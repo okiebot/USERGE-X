@@ -42,7 +42,7 @@ async def translateme(message: Message):
         text = message.reply_to_message.text or message.reply_to_message.caption
     if not text:
         await message.err(
-            text="Give a text or reply to a message to translate!\nuse `.help tr`"
+            text="Reply to a message to translate!"
         )
         return
     if len(flags) == 2:
@@ -52,7 +52,7 @@ async def translateme(message: Message):
     else:
         src, dest = "auto", Config.LANG
     text = get_emoji_regex().sub("", text)
-    await message.edit("`Translating ...`")
+    await message.edit("`Translating, please wait!`")
     try:
         reply_text = await _translate_this(text, dest, src)
     except ValueError:
@@ -60,7 +60,7 @@ async def translateme(message: Message):
         return
     source_lan = LANGUAGES[f"{reply_text.src.lower()}"]
     transl_lan = LANGUAGES[f"{reply_text.dest.lower()}"]
-    output = f"**Source ({source_lan.title()}):**`\n{text}`\n\n\
+    output = f"**Language ({source_lan.title()}):**`\n{text}`\n\n\
 **Translation ({transl_lan.title()}):**\n`{reply_text.text}`"
     await message.edit_or_send_as_file(text=output, caption="translated")
 
