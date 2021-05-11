@@ -684,15 +684,15 @@ async def emoji_func(message):
 async def bigf_func(message):
 
     animation_chars = [
-        "`You just got beamed my niGga`",
-        "`should've used a middle man faggot monkey`",
-        "`I'll drop your dox on your door Nigga`",
-        "`I don't fuck around `",
-        "`😤😤😤😤😤😤`",
-        "`🤬🤬😡😡😡😡`",
-        "`👿👿👿👿👿👿`",
-        "`😾😾😾😾😾😾`",
-        "`👹`",
+        "`https://ibb.co/xXt6xsF`",
+        "`https://ibb.co/MfYpdj0`",
+        "`https://ibb.co/Ld8XyrY`",
+        "`https://ibb.co/dgQr48d`",
+        "`https://ibb.co/dBK9fbv`",
+        "`https://ibb.co/jwmprFk`",
+        "`https://ibb.co/0FDmVfZ`",
+        "`https://ibb.co/2ZkgNz2        `",
+        "`LOL`",
     ]
 
     for i in range(18):
@@ -712,17 +712,17 @@ async def luv_story(message):
         "Bark Bark!!!",
         "I'm a good little doggy!!!",
         "😉bark bark! I'm a good slut hehehe",
-        "Text me for free nudes!! @paulax",
-        "Text me for free nudes!! @paulax",
+        "Text me for free nudes!! @Fetishize",
+        "Text me for free nudes!! @Fetishize",
         "My pussy is soooooo loose I can fit my little brothers head in it...",
-        "I'm so horny omg!!! Text me @paulax",
-        "I'm so horny omg!!! Text me @paulax",
-        "I'm so horny omg!!! Text me @paulax",
+        "I'm so horny omg!!! Text me @Fetishize",
+        "I'm so horny omg!!! Text me @Fetishize",
+        "I'm so horny omg!!! Text me @Fetishize",
         "I'm Lalo's little dirty slut... uWU",
         "I let Lalo piss on my face for fun hehe",
-        "Istg I'll suck everyone off rn! I belong to scumz",
+        "Istg Im a stupid slut! I belong to scumz",
         "Uwu I love pedos soooo much!",
-        "Text me! @paulax I send free nudes if you say (Lalo told me to text you)",
+        "Text me! @Fetishize I send free nudes if you say (Lalo told me to text you)",
     ]
     for i in range(14):
         await asyncio.sleep(2.7)
@@ -825,7 +825,7 @@ async def kill_func(message):
         "Everyone is a pedo...",
         "So don't be silly and don't touch your willy",
         "😩🚫🍆",
-        "<b>But tbh idk what the fuck I wrote this for I'm bored asf｀)</b>",
+        "<b>Fucking fake pedos bro, I hate fake pedos!!</b>",
     ]
     for i in range(10):
         await asyncio.sleep(0.6)
