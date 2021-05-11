@@ -227,13 +227,13 @@ class Bot_Alive:
     @staticmethod
     def alive_info() -> str:
         alive_info_ = f"""
-<a href="https://t.me/joinchat/EodhGjP6GjkyYzgx"><b>♦️SCUMZ♦️</a>CLICK ME TO JOIN SCUMZ</b>
+<a href="https://t.me/joinchat/EodhGjP6GjkyYzgx"><b>SCUMZ</a>CLICK ME TO JOIN SCUMZ</b>
 
   ♦️   <b>Python :</b>    <code>v{versions.__python_version__}</code>
   ♦️   <b>Pyrogram :</b>    <code>v{versions.__pyro_version__}</code>
   ♦️   <b>SV :</b>    <code>v0.0.1</code>
 
-<b>{Bot_Alive._get_mode()}</b>    <code>♦️</code>    =  <b>{userge.uptime}</b>
+<b>{Bot_Alive._get_mode()}</b>    <code>|</code>    =  <b>{userge.uptime}</b>
 """
         return alive_info_
 
