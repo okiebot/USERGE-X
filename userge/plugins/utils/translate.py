@@ -16,7 +16,7 @@ from userge.utils.functions import get_emoji_regex
 
 
 @userge.on_cmd(
-    "tr",
+    "translate",
     about={
         "header": "Translate the given text using Google Translate",
         "supported languages": dumps(LANGUAGES, indent=4, sort_keys=True),
