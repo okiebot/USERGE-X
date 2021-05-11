@@ -92,10 +92,10 @@ async def check_and_send(message: Message, *args, **kwargs):
         await message.edit(*args, **kwargs)
 
 
-@userge.on_cmd("fp$", about={"header": "Facepalm :P"})
+@userge.on_cmd("victim$", about={"header": "Facepalm :P"})
 async def facepalm_(message: Message):
     """facepalm_"""
-    await check_and_send(message, "🤦‍♂")
+    await check_and_send(message, "https://t.me/ezyexposure")
 
 
 @userge.on_cmd("cry$", about={"header": "y u du dis, i cri"})
@@ -701,7 +701,7 @@ async def bigf_func(message):
 
 
 @userge.on_cmd(
-    "paula$",
+    "maddi$",
     about={
         "header": "Get ready to witness a true love story that proves that love is the strongest force on Earth."
     },
