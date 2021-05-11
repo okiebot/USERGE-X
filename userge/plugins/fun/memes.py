@@ -680,18 +680,18 @@ async def emoji_func(message):
             pass
 
 
-@userge.on_cmd("beam$", about={"header": "Use when something is beyond just oof"})
+@userge.on_cmd("shitpost$", about={"header": "Use when something is beyond just oof"})
 async def bigf_func(message):
 
     animation_chars = [
-        "`https://ibb.co/xXt6xsF`",
-        "`https://ibb.co/MfYpdj0`",
-        "`https://ibb.co/Ld8XyrY`",
-        "`https://ibb.co/dgQr48d`",
-        "`https://ibb.co/dBK9fbv`",
-        "`https://ibb.co/jwmprFk`",
-        "`https://ibb.co/0FDmVfZ`",
-        "`https://ibb.co/2ZkgNz2        `",
+        "https://ibb.co/xXt6xsF",
+        "https://ibb.co/MfYpdj0",
+        "https://ibb.co/Ld8XyrY",
+        "https://ibb.co/dgQr48d",
+        "https://ibb.co/dBK9fbv",
+        "https://ibb.co/jwmprFk",
+        "https://ibb.co/0FDmVfZ",
+        "https://ibb.co/2ZkgNz2",
         "`LOL`",
     ]
 
