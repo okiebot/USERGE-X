@@ -6,7 +6,7 @@ from userge import Message, userge
 
 
 @userge.on_cmd(
-    "purge",
+    "delete",
     about={
         "header": "purge messages from user",
         "flags": {
@@ -22,7 +22,7 @@ from userge import Message, userge
 )
 async def purge_(message: Message):
     """purge from replied message"""
-    await message.edit("`purging ...`")
+    await message.edit("`Deleting User Messages`")
     from_user_id = None
     if message.filtered_input_str:
         from_user_id = (await message.client.get_users(message.filtered_input_str)).id
@@ -90,7 +90,7 @@ async def purge_(message: Message):
 
 
 @userge.on_cmd(
-    "purgeme",
+    "deleteme",
     about={
         "header": "purge messages from yourself",
         "usage": "{tr}purgeme [number]",
@@ -102,7 +102,7 @@ async def purge_(message: Message):
 )
 async def purgeme_(message: Message):
     """purge given no. of your messages"""
-    await message.edit("`purging ...`")
+    await message.edit("`Now Deleting My Messages`")
     if not (message.input_str and message.input_str.isdigit()):
         return await message.err(
             "Provide a valid number of message to delete", del_in=3
