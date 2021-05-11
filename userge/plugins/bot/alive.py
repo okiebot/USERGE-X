@@ -42,7 +42,7 @@ async def _init() -> None:
                 LOGGER.debug(b_rr)
 
 
-@userge.on_cmd("settings", about={"header": "Just For Fun"}, allow_channels=False)
+@userge.on_cmd("info", about={"header": "Just For Fun"}, allow_channels=False)
 async def alive_inline(message: Message):
     try:
         if message.client.is_bot:
