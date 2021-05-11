@@ -24,7 +24,7 @@ LOG = userge.getLogger(__name__)
 
 
 @userge.on_cmd(
-    "gmute",
+    "mute",
     about={
         "header": "Globally Mute A User",
         "description": "Adds User to your GMute List",
@@ -35,40 +35,40 @@ LOG = userge.getLogger(__name__)
 )
 async def gmute_user(msg: Message):
     """Mute a user globally"""
-    await msg.edit("`Globally Muting this User...`")
+    await msg.edit("`MUTING THIS CUCK!`")
     user_id, reason = msg.extract_user_and_text
     if not user_id:
         await msg.edit(
-            "`no valid user_id or message specified,`"
-            "`don't do .help gmute for more info. "
-            "Coz no one's gonna help ya`(｡ŏ_ŏ) ⚠"
+            "`Error`"
+            "`Error"
+            "Error"
         )
         return
     get_mem = await msg.client.get_user_dict(user_id)
     firstname = get_mem["fname"]
     if not reason:
         await msg.edit(
-            f"**#Aborted**\n\n**GMuting** of [{firstname}](tg://user?id={user_id}) "
-            "`Aborted coz No reason of GMute provided by User`",
+            f"**⚠️ERROR**\n\n**MUTING** [{firstname}](tg://user?id={user_id}) "
+            "`Failed! Must provide reason.`",
             del_in=5,
         )
         return
     user_id = get_mem["id"]
     if user_id == msg.from_user.id:
-        await msg.err(r"LoL. Why would I GMuting myself ¯\(°_o)/¯")
+        await msg.err(r"error")
         return
     if user_id in Config.SUDO_USERS:
         await msg.edit(
-            "`That user is in my Sudo List, Hence I can't GMute him.`\n\n"
-            "**Tip:** `Remove them from Sudo List and try again. (¬_¬)`",
+            "`That user has access to me, unable to mute user.`\n\n"
+            "Ask Lalo for help!!`",
             del_in=5,
         )
         return
     found = await GMUTE_USER_BASE.find_one({"user_id": user_id})
     if found:
         await msg.edit(
-            "**#Already_GMuted**\n\n`This User Already Exists in My GMute List.`\n"
-            f"**Reason For GMute:** `{found['reason']}`"
+            "**⚠️ERROR⚠️**\n\n`User is already muted`\n"
+            f"**Reason For Mute:** `{found['reason']}`"
         )
         return
     await asyncio.gather(
@@ -76,9 +76,9 @@ async def gmute_user(msg: Message):
             {"firstname": firstname, "user_id": user_id, "reason": reason}
         ),
         msg.edit(
-            r"\\**#GMuted_User**//"
-            f"\n\n**First Name:** [{firstname}](tg://user?id={user_id})\n"
-            f"**User ID:** `{user_id}`\n**Reason:** `{reason}`"
+            r"♦️USER NOW MUTED"
+            f"\n\n**Name:** [{firstname}](tg://user?id={user_id})\n"
+            f"**ID:** `{user_id}`\n**Reason:** `{reason}`"
         ),
     )
     chats = await userge.get_common_chats(user_id)
@@ -86,12 +86,12 @@ async def gmute_user(msg: Message):
         try:
             await chat.restrict_member(user_id, ChatPermissions())
             await CHANNEL.log(
-                r"\\**#Antispam_Log**//"
+                r"\\**ANTI SPAM**//"
                 f"\n**User:** [{firstname}](tg://user?id={user_id})\n"
-                f"**User ID:** `{user_id}`\n"
+                f"**ID:** `{user_id}`\n"
                 f"**Chat:** {chat.title}\n"
                 f"**Chat ID:** `{chat.id}`\n"
-                f"**Reason:** `{reason}`\n\n$GMUTE #id{user_id}"
+                f"**Reason:** `{reason}`\n\n$MUTE #id{user_id}"
             )
         except (ChatAdminRequired, UserAdminInvalid):
             pass
@@ -102,7 +102,7 @@ async def gmute_user(msg: Message):
 
 
 @userge.on_cmd(
-    "ungmute",
+    "unmute",
     about={
         "header": "Globally Unmute an User",
         "description": "Removes an user from your GMute List",
@@ -113,7 +113,7 @@ async def gmute_user(msg: Message):
 )
 async def ungmute_user(msg: Message):
     """unmute a user globally"""
-    await msg.edit("`UnGMuting this User...`")
+    await msg.edit("`UN-MUTING USER`")
     user_id, _ = msg.extract_user_and_text
     if not user_id:
         await msg.err("user-id not found")
@@ -123,14 +123,14 @@ async def ungmute_user(msg: Message):
     user_id = get_mem["id"]
     found = await GMUTE_USER_BASE.find_one({"user_id": user_id})
     if not found:
-        await msg.err("User Not Found in My GMute List")
+        await msg.err("User was never muted")
         return
     await asyncio.gather(
         GMUTE_USER_BASE.delete_one(found),
         msg.edit(
-            r"\\**#UnGMuted_User**//"
-            f"\n\n**First Name:** [{firstname}](tg://user?id={user_id})\n"
-            f"**User ID:** `{user_id}`"
+            r"♦️**Un-Muted User**♦️"
+            f"\n\n**Name:** [{firstname}](tg://user?id={user_id})\n"
+            f"**ID:** `{user_id}`"
         ),
     )
     chats = await userge.get_common_chats(user_id)
