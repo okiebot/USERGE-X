@@ -215,7 +215,7 @@ async def anti_flood_handler(msg: Message):
             exec_str = "#MUTED"
         await asyncio.gather(
             msg.reply(
-                r"\\**#Userge_AntiFlood**//"
+                r"\\**AntiFlood**//"
                 "\n\nThis User Reached His Limit of Spamming\n\n"
                 f"**User:** [{first_name}](tg://user?id={user_id})\n"
                 f"**ID:** `{user_id}`\n**Limit:** `{limit}`\n\n"
