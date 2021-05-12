@@ -451,7 +451,7 @@ async def copypasta(message: Message):
 
 
 @userge.on_cmd(
-    "vapor",
+    "ip",
     about={
         "header": "Vaporize everything!",
         "usage": "{tr}vapor [input | reply to msg]",
