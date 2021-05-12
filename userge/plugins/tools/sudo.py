@@ -135,9 +135,9 @@ async def view_sudo(message: Message):
     if not Config.SUDO_USERS:
         await message.edit("**SUDO** users not found!", del_in=5)
         return
-    out_str = "🚷 **SUDO USERS** 🚷\n\n"
+    out_str = "⚠️**ACCESS LIST**⚠️\n\n"
     async for user in SUDO_USERS_COLLECTION.find():
-        out_str += f" 🙋‍♂️ {user['men']} 🆔 `{user['_id']}`\n"
+        out_str += f" ♦️ {user['men']}  | `{user['_id']}`\n"
     await message.edit(out_str, del_in=0)
 
 
