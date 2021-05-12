@@ -248,7 +248,7 @@ async def clock_(message: Message):
 
 
 @userge.on_cmd(
-    "bt$",
+    "brick$",
     about={
         "header": "Believe me, you will find this useful",
         "usage": "{tr}bt [reply to msg]",
@@ -258,8 +258,8 @@ async def bluetext(message: Message):
     """bluetext"""
     if message.reply_to_message:
         await message.edit(
-            "/BLUETEXT /MUST /CLICK.\n"
-            "/ARE /YOU /A /STUPID /ANIMAL /WHICH /IS /ATTRACTED /TO /COLOURS?"
+            "Hahahaha you stupid kid!! I just used my \n"
+            "Ban stanza on you xD!!"
         )
 
 
