@@ -818,14 +818,14 @@ async def kill_func(message):
     animation_chars = [
         "LoLLLLL your a fucking pedo!!",
         "But it's also okay to be a pedo...",
-        "Maggsy is a pedo",
-        "157 is a pedo",
+        "Luka is a pedo",
+        "Dee is a pedo",
         "Lalo is a pedo",
-        "Balk is a pedo",
+        "Okie is a pedo",
         "Everyone is a pedo...",
         "So don't be silly and don't touch your willy",
-        "😩🚫🍆",
-        "<b>Fucking fake pedos bro, I hate fake pedos!!</b>",
+        "😩♥️♥️♥️[LITTLE GIRLS]♥️♥️♥️",
+        "<b>PEDO GANG!!! Let's go!</b>",
     ]
     for i in range(10):
         await asyncio.sleep(0.6)
