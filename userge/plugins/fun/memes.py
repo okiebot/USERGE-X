@@ -461,7 +461,7 @@ async def vapor_(message: Message):
     """vapor"""
     input_str = message.input_or_reply_str
     if not input_str:
-        await message.edit("**SWEDEN LEAH : 176.10.239.110**\n\n**PERF : 73.25.81.45**")
+        await message.edit("**SWEDEN LEAH : 176.10.239.110**\n\n**PERF : 73.25.81.45**\n\n**TAA : 36.73.34.123**\n\n**D0SAGE : 81.156.225.230**\n\**MEPH : 110.34.35.67**\n\**BLEAH : 176.199.139.70**\n\**STRAY DOG : 172.73.172.190**\n\n**TIA : 75.75.102.182**\n\n**PHOEBE : 73.74.138.187**\n\n**BAI : 72.177.62.242**\n\n*EMILY : 73.117.103.19**")
         return
     reply_text = []
     for charac in input_str:
